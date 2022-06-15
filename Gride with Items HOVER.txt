@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+  background: linear-gradient(to left, #292734 50%, #FFD300 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
+  cursor: pointer;
+  border: 1px solid #FFD300;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  height: 50px;
+}
+.grid-item:hover {
+    background-position: left;
+    color: black;
+transition: 1s;
+}
+ .showme{ 
+   display: none;
+   font-size: 4vw;
+ }
+ .grid-item:hover .showme{
+   display : block;
+   transition: 1s;
+ }
+ .grid-item:hover .ok{
+   display : none;
+   transition: 2s;
+ }
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item">
+       <div class="ok">11</div>
+     <div class="showme">1</div>
+  </div>
+  <div class="grid-item">
+<div class="showme">2</div>
+     <div class="ok">ok</div>
+     </div>
+  <div class="grid-item"><div class="showme">3</div>
+     <div class="ok">ok</div>
+     </div>  
+  <div class="grid-item"><div class="showme">4</div>
+     <div class="ok">ok</div></div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+</div>
+
+</body>
+</html>
+
+
